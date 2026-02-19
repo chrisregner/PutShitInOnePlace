@@ -9,7 +9,7 @@ using System.Runtime.CompilerServices;
 [assembly: IgnoresAccessChecksTo("DedicatedServer")]
 [assembly: IgnoresAccessChecksTo("BarotraumaCore")]
 
-namespace MyModName
+namespace PutShitInOnePlace
 {
     public partial class Plugin : IAssemblyPlugin
     {

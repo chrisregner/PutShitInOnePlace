@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Barotrauma;
 
-namespace MyModName
+namespace PutShitInOnePlace
 {
     public partial class Plugin : IAssemblyPlugin
     {
