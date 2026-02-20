@@ -210,6 +210,14 @@ namespace PutShitInOnePlace
                         continue;
                     }
 
+                    var holdable = targetItem.GetComponent<Holdable>();
+
+                    if (holdable != null && !holdable.IsAttached && targetItem.RootContainer == null)
+                    {
+                        if (Instance.verboseLogging) LuaCsLogger.Log($"PSIOP: - Container {kvp.Key} is an unstored holdable.");
+                        continue;
+                    }
+
                     Item root = targetItem.RootContainer ?? targetItem;
                     if (root.GetComponent<Fabricator>() != null || root.GetComponent<Deconstructor>() != null)
                     {
